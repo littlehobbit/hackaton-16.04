@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/back-part/voice-processing/venv/*
+/back-part/voice-processing/venv/Include/*
+/back-part/voice-processing/venv/Lib/*
+/back-part/voice-processing/venv/Scripts/*
+/back-part/voice-processing/src/test_audio/*
