@@ -199,107 +199,107 @@ class Message extends React.Component {
             {
                 type : "other_message",
                 img: "https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-png-50.png",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                time: "11:01",
+                name: "Андрей",
+                text: "Это наш бригадир"
             },
             {
                 type : "other_message",
                 img: "https://st4.depositphotos.com/1064024/20942/i/1600/depositphotos_209420380-stock-photo-digital-illustration-little-cute-unicorn.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                time: "11:01",
+                name: "Иван",
+                text: "Он не любит, когда отдыхают"
             },
             {
                 type : "other_message",
                 img: "https://pristor.ru/wp-content/uploads/2020/11/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83-%D0%B2-%D1%82%D0%B8%D0%BA-%D1%82%D0%BE%D0%BA-%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-35-%D1%84%D0%BE%D1%82%D0%BE-2.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                time: "11:02",
+                name: "Алена",
+                text: "Будь поосторожнее с ним"
             },
             {
                 type : "your_message",
                 img: "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
-                time: "11:00",
+                time: "11:05",
                 name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                text: "Есть какие-либо способы схалявить?"
             },
             {
                 type : "other_message",
                 img: "https://st4.depositphotos.com/1064024/20942/i/1600/depositphotos_209420380-stock-photo-digital-illustration-little-cute-unicorn.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                time: "11:06",
+                name: "Иван",
+                text: "Притворись куском бревна"
             },
             {
                 type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                img: "https://pristor.ru/wp-content/uploads/2020/11/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83-%D0%B2-%D1%82%D0%B8%D0%BA-%D1%82%D0%BE%D0%BA-%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-35-%D1%84%D0%BE%D1%82%D0%BE-1.jpg",
+                time: "11:07",
+                name: "Никита",
+                text: "Чтобы он его утилизировал!"
             },
             {
                 type : "other_message",
                 img: "https://pristor.ru/wp-content/uploads/2020/11/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83-%D0%B2-%D1%82%D0%B8%D0%BA-%D1%82%D0%BE%D0%BA-%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-35-%D1%84%D0%BE%D1%82%D0%BE-2.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                time: "11:08",
+                name: "Александр",
+                text: "Есди слиться с местностью, то может и прокатить"
             },
             {
                 type : "your_message",
                 img: "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
-                time: "11:00",
+                time: "11:10",
                 name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                text: "Костюм из шрека подойдет?"
+            },
+            {
+                type : "other_message",
+                img: "https://happypik.ru/wp-content/uploads/2019/09/odinokij-volk23.jpg.webp",
+                time: "11:11",
+                name: "Валера",
+                text: "Скорее всего костюм осла"
             },
             {
                 type : "other_message",
                 img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                time: "11:12",
+                name: "Рамзик",
+                text: "Да ладно вам Рафик добрый"
             },
             {
                 type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                img: "https://happypik.ru/wp-content/uploads/2019/09/odinokij-volk23.jpg.webp",
+                time: "11:15",
+                name: "Валера",
+                text: "Опа, ну шо Рамзик спалися"
             },
             {
                 type : "your_message",
                 img: "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
-                time: "11:00",
+                time: "11:16",
                 name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                text: "Мы теперь знаем Рамзик, что ты подставной агент"
             },
             {
                 type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                img: "https://st4.depositphotos.com/1064024/20942/i/1600/depositphotos_209420380-stock-photo-digital-illustration-little-cute-unicorn.jpg",
+                time: "11:16",
+                name: "Иван",
+                text: "Удаляем его с конфы"
             },
             {
                 type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
+                img: "https://happypik.ru/wp-content/uploads/2019/09/odinokij-volk23.jpg.webp",
+                time: "11:16",
+                name: "Валера",
+                text: "Так точно и кровати ему поломаем с гардинами!"
             },
             {
                 type : "your_message",
                 img: "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?"
+                time: "11:17",
+                name: "Валера",
+                text: "Привет, а кто такой Рафик?"
             }]
     }
     render() {
