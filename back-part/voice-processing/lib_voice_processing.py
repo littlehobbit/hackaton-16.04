@@ -36,7 +36,3 @@ def audio_to_text():
     with sample_audio as audio_file:
         audio_content = recognizer.record(audio_file)
     return recognizer.recognize_google(audio_content, language="ru_RU")
-
-
-print(get_emotions())
-print(audio_to_text())
