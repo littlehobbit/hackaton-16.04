@@ -4,10 +4,11 @@
 }
 
 .task{
-    margin: 5px;
+    margin: 4px;
     padding: 5px;
     width: auto;
     background-color: antiquewhite;
+    border-radius: 5px;
 }
 
 .task-header{
@@ -30,10 +31,23 @@
     justify-content: center;
 }
 
-.avatar img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.box_task {
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    overflow:hidden;
+    width:60px;
+    height:60px;
+}
+
+.box_task img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:60px;
+    height:60px;
+    object-fit:cover;
 }
 
 .resource{
@@ -49,5 +63,13 @@
 
 .task:hover{
     background-color: burlywood;
+}
+
+p span{
+}
+
+p span:hover{
+    color: cadetblue;
     cursor: pointer;
+    text-decoration-line: underline;
 }

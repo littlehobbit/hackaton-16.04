@@ -1,53 +1,98 @@
 /* Chat containers */
 .chat {
     display: flex;
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
     width: 80%;
 }
 
 .your_message {
-    display: flex;
     flex-direction: row-reverse;
     float: right;
-    background-color: #d5d;
+    background-color: burlywood;
+}
+
+.your_message .box_message {
+    margin-left: 10px;
+}
+
+.your_message .message_person{
+    text-align: right;
+}
+
+.your_message .time{
+    text-align: left;
+}
+
+.your_message .message_text{
+    text-align: right;
 }
 
 /* Darker chat container */
 .other_message {
-    display: flex;
     flex-direction: row;
     float: left;
-    background-color: #ddd;
+    background-color: aliceblue;
 }
 
-/* Style images */
-.chat img {
-    max-height: 50px;
-    height: 100%;
-    margin-right: 20px;
-    border-radius: 50%;
+.other_message .box_message {
+    margin-right: 10px;
 }
 
-/* Style time text */
-.time {
-    color: black;
-    align-content: center;
+.other_message .message_person{
+    text-align: left;
+}
+
+.other_message .time{
+    text-align: right;
+}
+
+.other_message .message_text{
+    text-align: left;
+}
+
+.time{
+    width: -webkit-fill-available;
+}
+
+.message_person:hover {
+    color: cadetblue;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.column{
+    display:flex;
+    flex-direction: column;
+    min-width: 60%;
+}
+
+.box_message {
+    border-radius: 5px;
+    position: relative;
+    overflow:hidden;
+    min-width:50px;
+    height:50px;
+}
+
+.box_message img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:50px;
+    height:50px;
+    object-fit:cover;
 }
 
 .chat p{
     width: 100%;
 }
 
-.column{
-    display:flex;
-    flex-direction: column;
-}
-
 .dialog_window
 {
+    padding: 2px;
     height: 90%;
     min-height: 80%;
     overflow: scroll;
@@ -63,6 +108,7 @@
     background-color: coral;
     height: 10%;
     width: 100%;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .input_window textarea

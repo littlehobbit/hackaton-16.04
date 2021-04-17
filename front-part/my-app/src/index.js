@@ -8,9 +8,12 @@ import './css/Style.css';
 import './css/Chat.css';
 import './css/Tabs.css';
 
+
 import micro from "./icons/microphone-solid.svg"
 import send from "./icons/paper-plane-solid.svg"
 
+
+const tabs_js = require('./js/tabs.js');
 
 function openCity(evt, cityName) {
     // Declare all variables
@@ -34,21 +37,22 @@ function openCity(evt, cityName) {
 }
 
 
-
 //Task----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function Task_struct(props) {
     return (
         <div className="task">
             <div className="task-header">
-                <div className="avatar">
+                <div className="box_task">
+                    <div className="avatar">
+                </div>
                     <img src={props.task.img}/>
                 </div>
                 <div className="relationship">
                     <div className="person">
                         <p className="employer-and-employee">
-                            <span className="person">{props.task.employer + " "}</span>
-                            дал задание
-                            <span className="person">{" " + props.task.employee}</span>
+                            <span className="person">{props.task.employer}</span>
+                            &nbsp;дал задание&nbsp;
+                            <span className="person">{props.task.employee}</span>
                         </p>
                         <p className="resource">
                             {props.task.source}
@@ -79,7 +83,7 @@ class Task extends React.Component {
             description : "Отставить гейство!"
         },
             {
-                img : "https://static.wikia.nocookie.net/heroes-and-villians/images/e/ec/Flocker_Black_Portrait_001.png/revision/latest?cb=20180811230458",
+                img : "https://e7.pngegg.com/pngimages/33/432/png-clipart-angry-bird-bomb-illustration-angry-birds-friends-angry-birds-action-angry-birds-fight-film-angry-birds-bird-angry-birds-movie.png",
                 employer: "Данила",
                 employee: "Мише",
                 source: "Teams",
@@ -95,7 +99,7 @@ class Task extends React.Component {
                 description : "Сам носи свои кровати на второй этаж!"
             },
             {
-                img : "https://static.wikia.nocookie.net/heroes-and-villians/images/e/ec/Flocker_Black_Portrait_001.png/revision/latest?cb=20180811230458",
+                img : "https://e7.pngegg.com/pngimages/388/574/png-clipart-angry-birds-star-wars-angry-birds-go-angry-birds-2-angry-birds-pop-the-angry-birds-movie-chuck-angry-birds-speedy-bird-chicken-galliformes.png",
                 employer: "Данила",
                 employee: "Мише",
                 source: "Teams",
@@ -103,7 +107,7 @@ class Task extends React.Component {
                 description : "Мини игры быстро делать!"
             },
             {
-                img : "https://static.wikia.nocookie.net/heroes-and-villians/images/e/ec/Flocker_Black_Portrait_001.png/revision/latest?cb=20180811230458",
+                img : "https://e7.pngegg.com/pngimages/599/41/png-clipart-angry-birds-go-angry-birds-star-wars-angry-birds-space-angry-birds-2-youtube-pink-bird-owl-bird.png",
                 employer: "Данила",
                 employee: "Мише",
                 source: "Teams",
@@ -168,10 +172,15 @@ class Task extends React.Component {
 function Message_struct(props) {
     return (
         <div className={props.message.type + " chat"}>
-            <img src={props.message.img} alt="Avatar"></img>
+            <div className="box_message">
+                <img src={props.message.img} alt="Avatar"></img>
+            </div>
             <div className="column">
-                <p>{props.message.name}</p>
-                <p>{props.message.text}</p>
+                <p className="message_person">{props.message.name}</p>
+                <p className="message_text">{props.message.text}</p>
+            </div>
+            <div>
+
             </div>
             <span className="time">{props.message.time}</span>
         </div>
@@ -270,12 +279,33 @@ class Message extends React.Component {
                 time: "11:00",
                 name: "Руслан",
                 text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "other_message",
+                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "other_message",
+                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "your_message",
+                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?"
             }]
     }
     render() {
         return (
             this.state.message.map(message => {
-                return (
+                return  (
                     <Message_struct message={message}/>
                 )
             })
@@ -356,9 +386,9 @@ class MyApp extends React.Component {
                 </div>
                 <div className="col" id="col3">
                     <div className="tab">
-                        <button className="tablinks" onClick={(e) => openCity(e, 'London')}>London</button>
-                        <button className="tablinks" onClick={(e) => openCity(e, 'Paris')}>Paris</button>
-                        <button className="tablinks" onClick={(e) => openCity(e, 'Tokyo')}>Tokyo</button>
+                        <button className="tablinks" onClick={(e) => tabs_js.openCity()(e, 'London')}>London</button>
+                        <button className="tablinks" onClick={(e) => tabs_js.openCity()(e, 'Paris')}>Paris</button>
+                        <button className="tablinks" onClick={(e) => tabs_js.openCity()(e, 'Tokyo')}>Tokyo</button>
                     </div>
                     <Tab/>
                 </div>
@@ -371,6 +401,8 @@ class MyApp extends React.Component {
 ReactDOM.render(<MyApp/> , document.getElementById('root'));
 document.getElementsByClassName("tabcontent")[0].style.display = "block";
 document.getElementsByClassName("tablinks")[0].className += " active";
+
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0118590f-8c95-4f52-b60f-ae8f917d1327" name="Default Changelist" comment="" />
+    <list default="true" id="0118590f-8c95-4f52-b60f-ae8f917d1327" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Task.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Task.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -63,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618651933976</updated>
       <workItem from="1618651935423" duration="941000" />
-      <workItem from="1618652888339" duration="21563000" />
+      <workItem from="1618652888339" duration="32783000" />
     </task>
     <servers />
   </component>
