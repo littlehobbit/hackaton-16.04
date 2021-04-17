@@ -79,7 +79,7 @@ class Task extends React.Component {
             employer: "Борисов",
             employee: "Взводу",
             source: "Teams",
-            date : "11.11.1111",
+            date : "11.11.2021",
             description : "Отставить гейство!"
         },
             {
@@ -87,7 +87,7 @@ class Task extends React.Component {
                 employer: "Данила",
                 employee: "Мише",
                 source: "Teams",
-                date : "11.11.1111",
+                date : "11.11.2021",
                 description : "Мини игры быстро делать!"
             },
             {
@@ -95,71 +95,71 @@ class Task extends React.Component {
                 employer: "Саша",
                 employee: "Рафику",
                 source: "Teams",
-                date : "11.11.1111",
+                date : "11.11.2021",
                 description : "Сам носи свои кровати на второй этаж!"
             },
             {
                 img : "https://e7.pngegg.com/pngimages/388/574/png-clipart-angry-birds-star-wars-angry-birds-go-angry-birds-2-angry-birds-pop-the-angry-birds-movie-chuck-angry-birds-speedy-bird-chicken-galliformes.png",
-                employer: "Данила",
-                employee: "Мише",
-                source: "Teams",
-                date : "11.11.1111",
-                description : "Мини игры быстро делать!"
+                employer: "Андрей",
+                employee: "Абраму",
+                source: "Telegram",
+                date : "20.11.2021",
+                description : "Забрать машину с ремонта!"
             },
             {
                 img : "https://e7.pngegg.com/pngimages/599/41/png-clipart-angry-birds-go-angry-birds-star-wars-angry-birds-space-angry-birds-2-youtube-pink-bird-owl-bird.png",
-                employer: "Данила",
-                employee: "Мише",
-                source: "Teams",
-                date : "11.11.1111",
-                description : "Мини игры быстро делать!"
+                employer: "Анатолий",
+                employee: "Никите",
+                source: "Zoom",
+                date : "19.12.2021",
+                description : "Разработать frontend"
             },
             {
-                img : "https://static.wikia.nocookie.net/heroes-and-villians/images/e/ec/Flocker_Black_Portrait_001.png/revision/latest?cb=20180811230458",
-                employer: "Данила",
-                employee: "Мише",
+                img : "https://pm1.narvii.com/7114/d11626302bfa8acdf55fd93565ad6b3d33974d41r1-368-365v2_128.jpg",
+                employer: "Алексей",
+                employee: "Александру",
                 source: "Teams",
-                date : "11.11.1111",
-                description : "Мини игры быстро делать!"
+                date : "13.01.2021",
+                description : "Выключить компьютеры после окончания рабочего дня"
             },
             {
-                img : "https://static.wikia.nocookie.net/heroes-and-villians/images/e/ec/Flocker_Black_Portrait_001.png/revision/latest?cb=20180811230458",
-                employer: "Данила",
-                employee: "Мише",
-                source: "Teams",
-                date : "11.11.1111",
-                description : "Мини игры быстро делать!"
+                img : "https://www.meme-arsenal.com/memes/754a1e43e63bde5279944a1fce2c9075.jpg",
+                employer: "Анастасия",
+                employee: "Михаилу",
+                source: "Trello",
+                date : "09.08.2021",
+                description : "Разработать систему для умного дома"
             },
             {
-                img : "https://static.wikia.nocookie.net/heroes-and-villians/images/e/ec/Flocker_Black_Portrait_001.png/revision/latest?cb=20180811230458",
-                employer: "Данила",
-                employee: "Мише",
-                source: "Teams",
-                date : "11.11.1111",
-                description : "Мини игры быстро делать!"
+                img : "https://www.meme-arsenal.com/memes/101142ad6b036a0d3db193eb1a5e743a.jpg",
+                employer: "Афродита",
+                employee: "Зевсу",
+                source: "Zoom",
+                date : "10.10.2021",
+                description : "Сделать план местности"
             },
             {
-                img : "https://i.pinimg.com/originals/51/a1/b3/51a1b34e4d05f27dd269a5c10e08beda.jpg",
-                employer: "Саша",
-                employee: "Рафику",
+                img : "https://www.meme-arsenal.com/memes/e82670561bc9731a04c756c6928b0664.jpg",
+                employer: "Луна",
+                employee: "Земле",
                 source: "Teams",
-                date : "11.11.1111",
-                description : "Сам носи свои кровати на второй этаж!"
+                date : "17.01.2021",
+                description : "Купи пару астероидов"
             },
             {
-                img : "https://i.pinimg.com/originals/51/a1/b3/51a1b34e4d05f27dd269a5c10e08beda.jpg",
-                employer: "Саша",
-                employee: "Рафику",
+                img : "https://www.meme-arsenal.com/memes/0e16dcd1a02f5e33ed9d6e6c8732eb2a.jpg",
+                employer: "Василий",
+                employee: "Василисе",
                 source: "Teams",
-                date : "11.11.1111",
-                description : "Сам носи свои кровати на второй этаж!"
+                date : "05.07.2021",
+                description : "Построить дом"
             }]
     }
     render() {
         return (
             this.state.task.map(task => {
                 return (
-                    <Task_struct task={task}/>
+                    <Task_struct task={task} key={task.employer + Math.random()}/>
                 )
             })
         )
@@ -191,13 +191,69 @@ class Message extends React.Component {
     state = {
         message: [{
             type : "your_message",
-            img : "https://static.wikia.nocookie.net/heroes-and-villians/images/e/ec/Flocker_Black_Portrait_001.png/revision/latest?cb=20180811230458",
+            img : "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
             time: "11:00",
             name: "Руслан",
             text: "Привет, а кто такой Рафик?"
         },
             {
                 type : "other_message",
+                img: "https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-png-50.png",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "other_message",
+                img: "https://st4.depositphotos.com/1064024/20942/i/1600/depositphotos_209420380-stock-photo-digital-illustration-little-cute-unicorn.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "other_message",
+                img: "https://pristor.ru/wp-content/uploads/2020/11/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83-%D0%B2-%D1%82%D0%B8%D0%BA-%D1%82%D0%BE%D0%BA-%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-35-%D1%84%D0%BE%D1%82%D0%BE-2.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "your_message",
+                img: "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "other_message",
+                img: "https://st4.depositphotos.com/1064024/20942/i/1600/depositphotos_209420380-stock-photo-digital-illustration-little-cute-unicorn.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "other_message",
+                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "other_message",
+                img: "https://pristor.ru/wp-content/uploads/2020/11/%D0%9A%D1%80%D0%B0%D1%81%D0%B8%D0%B2%D1%8B%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83-%D0%B2-%D1%82%D0%B8%D0%BA-%D1%82%D0%BE%D0%BA-%D0%BF%D0%BE%D0%B4%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-35-%D1%84%D0%BE%D1%82%D0%BE-2.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "your_message",
+                img: "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
+                time: "11:00",
+                name: "Руслан",
+                text: "Привет, а кто такой Рафик?"
+            },
+            {
+                type : "other_message",
                 img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
                 time: "11:00",
                 name: "Руслан",
@@ -219,42 +275,7 @@ class Message extends React.Component {
             },
             {
                 type : "your_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "your_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
+                img: "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
                 time: "11:00",
                 name: "Руслан",
                 text: "Привет, а кто такой Рафик?"
@@ -275,28 +296,7 @@ class Message extends React.Component {
             },
             {
                 type : "your_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "other_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
-                time: "11:00",
-                name: "Руслан",
-                text: "Привет, а кто такой Рафик?"
-            },
-            {
-                type : "your_message",
-                img: "https://3dnews.ru/assets/external/illustrations/2020/01/22/1001998/29.jpg",
+                img: "https://vjoy.cc/wp-content/uploads/2019/06/1-12.jpg",
                 time: "11:00",
                 name: "Руслан",
                 text: "Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?Привет, а кто такой Рафик?"
@@ -306,7 +306,7 @@ class Message extends React.Component {
         return (
             this.state.message.map(message => {
                 return  (
-                    <Message_struct message={message}/>
+                    <Message_struct message={message} key={message.type + Math.random()}/>
                 )
             })
         )
@@ -328,25 +328,25 @@ class Tab extends React.Component {
     state = {
         tab: [{
             id : "London",
-            title : "London",
-            description: "London"
+            title : "Поле 1",
+            description: "Инфо ..."
         },
         {
             id : "Paris",
-            title : "Paris",
-            description: "Paris"
+            title : "Задача 1",
+            description: "Сделать ..."
         },
         {
             id : "Tokyo",
-            title : "Tokyo",
-            description: "Tokyo"
+            title : "Текст...",
+            description: ""
         }]
     }
     render() {
         return (
             this.state.tab.map(tab => {
                 return (
-                    <Tab_struct tab={tab}/>
+                    <Tab_struct tab={tab} key={tab.id + Math.random()}/>
                 )
             })
         )
@@ -386,9 +386,9 @@ class MyApp extends React.Component {
                 </div>
                 <div className="col" id="col3">
                     <div className="tab">
-                        <button className="tablinks" onClick={(e) => tabs_js.openCity()(e, 'London')}>London</button>
-                        <button className="tablinks" onClick={(e) => tabs_js.openCity()(e, 'Paris')}>Paris</button>
-                        <button className="tablinks" onClick={(e) => tabs_js.openCity()(e, 'Tokyo')}>Tokyo</button>
+                        <button className="tablinks" onClick={(e) => tabs_js(e, 'London')}>Список полей сделки</button>
+                        <button className="tablinks" onClick={(e) => tabs_js(e, 'Paris')}>Список задач</button>
+                        <button className="tablinks" onClick={(e) => tabs_js(e, 'Tokyo')}>Редактор</button>
                     </div>
                     <Tab/>
                 </div>
