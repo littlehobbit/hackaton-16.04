@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    font-family: "Arial Narrow";
+}
+
+.app {
+    padding: 10px;
+    flex-direction: row;
+    display: flex;
+    max-height: 100vh;
+}
+
+
+.container:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+#col1{
+    width: 20%;
+    min-width: 200px;
+    background-color: cadetblue;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#col2{
+    width: 40%;
+    min-width: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: steelblue;
+
+}
+
+#col3{
+    width: 40%;
+    min-width: 400px;
+    background-color: coral;
+}

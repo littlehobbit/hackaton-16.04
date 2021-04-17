@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.task{
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    background-color: antiquewhite;
+}
+
+.task-header{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.avatar{
+    max-width: 200px;
+    height: 70px;
+    width: 20%;
+    margin-right: 7px;
+    min-width: 60px;
+}
+
+.relationship{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resource{
+    margin: 2px 0px;
+}
+
+.task-description {
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task:hover{
+    background-color: burlywood;
+    cursor: pointer;
+}
