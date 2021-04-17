@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0118590f-8c95-4f52-b60f-ae8f917d1327" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/Chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/Style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/Tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/Task.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/FEA.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/tabs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/scripts/React.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/scripts/React.js" afterDir="false" />
-    </list>
+    <list default="true" id="0118590f-8c95-4f52-b60f-ae8f917d1327" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618651933976</updated>
       <workItem from="1618651935423" duration="941000" />
-      <workItem from="1618652888339" duration="21133000" />
+      <workItem from="1618652888339" duration="21563000" />
     </task>
     <servers />
   </component>
