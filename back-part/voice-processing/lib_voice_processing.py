@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 
 
-def get_emotions():
-    audio = 'src/test.wav'
+def get_emotions(audio):
+    #audio = 'src/test.wav'
     json_file = open('src/model.json', 'r')
     loaded_model_json = json_file.read()
     json_file.close()
@@ -23,14 +23,14 @@ def get_emotions():
     livedf2 = pd.DataFrame(data=livedf2)
     livedf2 = livedf2.stack().to_frame().T
     twodim = np.expand_dims(livedf2, axis=2)
-    livepreds = loaded_model.predict(twodim, batch_size=32, verbose=1)
+    livepreds = loaded_model.predict(twodim, batch_size=32, verbose=0)
     keys = ["female_angry", "female_calm", "female_fearful", "female_happy", "female_sad", "male_angry", "male_calm", "male_fearful", "male_happy", "male_sad"]
     dict = {keys[i]: livepreds[0][i] for i in range(len(livepreds[0]))}
     return max(dict, key=dict.get)
 
 
-def audio_to_text():
-    audio = 'src/test.wav'
+def audio_to_text(audio):
+    #audio = 'src/test.wav'
     sample_audio = speech_recognition.AudioFile(audio)
     recognizer = speech_recognition.Recognizer()
     with sample_audio as audio_file:
